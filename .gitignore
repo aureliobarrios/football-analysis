@@ -4,3 +4,4 @@ yolov8x.pt
 /runs
 .env
 /training
+.DS_Store
