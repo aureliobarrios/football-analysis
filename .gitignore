@@ -2,3 +2,5 @@
 /visionVENV
 yolov8x.pt
 /runs
+.env
+/training
