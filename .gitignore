@@ -1,7 +1,10 @@
 /videos
 /visionVENV
 yolov8x.pt
+yolov5xu.pt
+yolo11n.pt
 /runs
 .env
 /training
 .DS_Store
+football-players-detection-1
