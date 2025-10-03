@@ -11,3 +11,5 @@ football-players-detection-1
 /models
 /output_videos
 /utils/__pycache__
+/trackers/__pycache__
+/stubs
