@@ -9,3 +9,5 @@ yolo11n.pt
 .DS_Store
 football-players-detection-1
 /models
+/output_videos
+/utils/__pycache__
