@@ -1,5 +1,6 @@
 from utils import read_video, save_video
 from trackers import Tracker
+import cv2
 
 def main():
     #read video
@@ -9,6 +10,19 @@ def main():
     tracker = Tracker("models/best.pt")
 
     tracks = tracker.get_object_tracks(video_frames, read_from_stub=True, stub_path="stubs/track_stubs.pkl")
+
+    #save cropped image of a player
+    for track_id, player in tracks["player"][0].items():
+        bbox = player
+        frame = video_frames[0]
+
+        #crop bbox from frame
+        cropped_image = frame[bbox[1]:bbox[3], bbox[0]:bbox[2]]
+
+        #save the cropped image
+        cv2.imwrite(f"output_videos/cropped_img.jpg", cropped_image)
+
+        break
 
     #draw output
     #draw object tracks
