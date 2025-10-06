@@ -27,7 +27,9 @@ def main():
 
     #Assign player teams
     team_assigner = TeamAssigner()
+    print("1")
     team_assigner.assign_team_color(video_frames[0], tracks["players"][0])
+    print("2")
 
     for frame_num, player_track in enumerate(tracks["players"]):
         for player_id, track in player_track.items():

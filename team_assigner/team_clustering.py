@@ -35,7 +35,9 @@ class TeamAssigner:
 
         player_cluster = 1 - non_player_cluster
 
+        print("#")
         player_color = kmeans.cluster_centers_[player_cluster]
+        print("!")
 
         return player_color
 
