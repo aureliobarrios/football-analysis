@@ -3,4 +3,6 @@ In this repository I use Machine Learning, Computer Vision and Deep Learning to 
 
 ## YOLO Training
 
+In order to have a model ready for our specific use case, it was essential to train a YOLO model to soccer specific image data found on Roboflow, as shown on the training notebook. The following are the results for that training. 
+
 ![](/images/training.png)
